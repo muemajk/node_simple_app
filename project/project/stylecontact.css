@@ -1,0 +1,309 @@
+html,
+body   {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 16px;
+  
+}
+
+/* styling our overall page */
+body     {
+  background: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  
+
+}
+
+/* styling our header */
+header   {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: #001f3f;
+  color: #FFF;
+  padding: 20px 30px;
+}
+
+/* logo */
+#logo         {
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  width: 49%;
+  margin-left: 2rem;
+}
+#logo img    {
+  width: 50px;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#logo title {
+  display: inline-block;
+  text-align: center;
+  margin-left:1rem;
+}
+
+
+.searchbar input[type=text] {
+  display: inline-block;
+  padding: 10px;
+  border: 30px 30px;
+  width: 80%;
+  margin-left: 5px;
+  
+ 
+}
+
+/* main navigation */
+.active {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+  margin-right:2rem;
+}
+.active ul   {
+  list-style: none;
+  margin: 0;
+  
+}
+
+.active ul li {
+  display: inline-block;
+}
+
+.active ul li a    {
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: 0.8s ease all;
+}
+.active ul li a:hover   {
+  background: #444;
+}
+
+
+.main-nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0;
+  list-style:none;
+  border: 3px;
+  
+  
+}
+
+
+
+
+.main-nav-bar ul li a  {
+  background:#001f3f;
+  color: #FFF;;
+  text-decoration: none;
+  display: block;
+  padding: 1.5rem;
+  text-align:centre;
+ 
+}
+
+.main-nav-bar ul li a:hover {
+   background: #444;
+  
+}
+
+
+
+
+.contact-section  {
+            box-sizing: border-box;
+            padding:0;
+            margin-top: 0;
+}
+
+.contact-bg{
+      min-height:60vh;
+      background:  url(contact-bg.jpg) no-repeat;
+      backgroung-position: 100% 100%;
+      background-attachment: local;
+      text-align: center;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+
+ 
+.contact-bg h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+}
+
+
+.text {
+  font-weight: 300rem;
+  padding-left: 3rem;
+}
+
+.contact-bg .text{
+      
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      
+}
+
+
+.contact-body {
+   max-width: 1320px;
+   margin: 0 auto;
+   padding: 0 1rem;
+   width: 100%;
+   padding: 28px 0px;
+   background-color: #C69DD2;
+   
+   
+   
+   
+}
+
+.contact-info {
+   margin: 1rem 0;
+   text-align: center;
+   padding: 1rem 0 ;
+   
+}
+
+.contact-info span {
+           display: block;
+          
+}
+
+
+.contact-info div {
+       
+         margin: 0.8rem 0;
+         padding: 1rem;
+}
+
+.contact-info span .fas{
+   font-size: 2rem;
+   padding-bottom: 0.9rem;
+   color: #DC143C;
+  
+}
+
+.contact-info div span:nth-child(2) {
+     font-weight: 500;
+     font-size: 1.1rem;
+}
+
+
+.contact-info .text{
+    padding-top: 0.4rem;
+}
+
+
+.contact-form {
+      padding:1rem 0;
+      border-top: 1rem, solid #c7c7c7;
+
+}
+
+.contact-form form{
+   padding-bottom: 2rem;
+   margin-left: 4rem;
+}
+
+#email {
+    border: 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    width: calc(30% - 10px);
+    height: 20px;
+    padding: 12px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 1rem;
+    opacity: 0.9;
+   
+
+}
+
+
+#email:focus {
+   box-shadow: 0 0 3px 3px rgba(48, 48, 48, 1);
+}
+
+
+.send-btn {
+    float: left;
+    color: #fff;
+    background: #DC143C;
+    text-decoration: none;
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .4s ease;
+    margin-left: 6rem;
+    
+}
+
+.send-btn:hover {
+   opacity: 0.8;
+}
+
+
+.contact-form> div{
+   margin-left: 3rem;
+   text-align: center;
+}
+  
+@media screen and (min-width: 768px) {
+      .contact-bg .text{
+                   
+                   width: 70%;
+                   margin-left: auto;
+                   margin-right: auto;
+       }
+      .contact-info{
+                   display: grid;
+                   grid-template-columns:repeat(2, 1fr)
+       }
+}
+
+footer {
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 15vh;
+        width: 100%;
+        background: #001f3f;
+        color: #fff;
+    
+}
+
+footer img {
+     width: 50px;
+     border-radius: 3px;
+     margin-right: 8px;
+     margin-top: 15px;
+     vertical-align: middle;
+     
+}
+}
+
+
+
+  
+

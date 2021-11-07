@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs') %>
+    <link rel="stylesheet" href="public/css/styleproductpage.css">
+</head>
+<body>
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+    <main>
+        <section class="product">
+            <h1 class="heading">Welcome to our Products Page</h1>
+            <h3 class="heading2">"Our prices are low but our balloons fly so HIGH"</h3>
+            <p class="product-intro">The main features of the business are a large selection of balloons and balloon-themed
+               products for all occasions, local delivery within 75 miles of the main store, two-day shipping
+               anywhere in the USA, free shipping on orders over $100, and a "Balloon-of-the-Month" club that 
+               sends an assortment of mystery balloons in a box once per month for $39.95.</p>
+        </section>
+
+        <section>
+            <div class="grid-container">
+                <% products.forEach(function(product){ %>
+                    <div class="card">
+                        <img src=<%= product.imageURL %> alt="ballon 1" style="width:100%">
+                        <div class="container">
+                          <h4><%= product.productName %></h4>
+                          <p><%= product.category %></p>
+                            <p class="price">Price: <%= product.unitPrice %></p>
+                            <button class ="bot"><a href="productpage.html">Save to cart</a></button>
+                        </div>
+                    </div>
+                <% }); %>
+            </div></section>
+    </main>
+    <%- include('../partials/footer.ejs') %>
+</body>
+</html>

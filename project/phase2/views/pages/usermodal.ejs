@@ -1,0 +1,79 @@
+
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <link rel="stylesheet" href="public/css/usermodal.css">
+</head>
+<body>
+    
+    <header>
+        <%- include('../partials/header'); %>
+        <div>
+            <p><strong>Welcome,</strong><%= session.user %></p>
+            <a href="/logout">Logout</a>
+        </div>
+    </header>
+    <main>
+        <% if(action == 'login') { %>
+            <div class="wrapper fadeInDown">
+                <div id="formContent">
+                  <!-- Tabs Titles -->
+              
+                  <!-- Icon -->
+                  <div class="fadeIn first" >
+                    <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+                  </div>
+              
+                  <!-- Login Form -->
+                  <form action="/loginfunction" method="POST">
+                    <input type="text" id="username" class="fadeIn second" name="username" placeholder="login">
+                    <input type="text" id="password" class="fadeIn third" name="password"  placeholder="password">
+                    <input type="submit" class="fadeIn fourth" value="Log In">
+                  </form>
+              
+                  <!-- Remind Passowrd -->
+                  <div id="formFooter">
+                    <a class="underlineHover" href="#">Forgot Password?</a>
+                  </div>
+              
+                </div>
+              </div>
+       <% } else if(action == 'register') { %>
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+              <!-- Tabs Titles -->
+          
+              
+              <!-- Login Form -->
+              <form action="/registration" method="POST">
+                <input type="text" id="fname" class="fadeIn first" name="fname" placeholder="first name" maxlength="25">
+                <input type="text" id="lname" class="fadeIn first" name="lname" placeholder="last name" maxlength="25">
+                <input type="text" id="address" class="fadeIn first" name="address" placeholder="address" maxlength="30">
+                <input type="text" id="city" class="fadeIn first" name="city" placeholder="City" maxlength="25">
+                <input type="text" id="state" class="fadeIn first" name="state" placeholder="State" maxlength="2">
+                <input type="text" id="postal" class="fadeIn first" name="postal" placeholder="postal code" maxlength="5">
+                <input type="text" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="phone">
+                <input type="text" id="username" class="fadeIn first" name="username" placeholder="user name">
+                <input type="email" id="email" class="fadeIn second" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address"
+                placeholder="email">
+                <input type="password" id="password1" class="fadeIn third" name="password1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="password">
+                <input type="password" id="password2" class="fadeIn third" name="password2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="password">
+                <input type="submit" class="fadeIn fourth" value="Register">
+              </form>
+          
+              <!-- Remind Passowrd -->
+              <div id="formFooter">
+                <a class="underlineHover" href="#">Forgot Password?</a>
+              </div>
+          
+            </div>
+          </div>
+       <% } %>
+    </main>
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>

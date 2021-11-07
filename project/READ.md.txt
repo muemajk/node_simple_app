@@ -1,0 +1,28 @@
+
+
+My project is about ballon selling website creation.
+
+Well, in my page i have created a Homepage, Productpage, About page, Contact page.
+
+In my home page in the header part i have added logo and companys name on left side corner and coming to the right side i have added search bar, 
+products, about, contactus tabs. By clciking on the tabs it will be redirect to their respective pages i.e by clicking on Product tab it will be redirect 
+to productpage.
+ 
+I used the header and Footer part same for all 4 pages. Down of the header part i have nav bars with different items that i am going to promote by clicking 
+on those it will be redirect to product page.
+
+In the Home page after the main nav bar i have an image with beautiful lines about my ballon comapany. After the image i have few paragraphs which styled 
+with grid.
+
+In my Product page i have few lines about my products and their offers and down of it i have my products with their product descriptions, prices which styled
+with grid.
+
+In my About page i have my Company's founder image and beside of it i have few lines about her.
+
+In my contact page i gave the phone number, email address, address and opening hours of office. There is also a form for the customers to get the company's 
+offers, promotions via email. So, for this part i have given an input part for the customers to fill their mail id and a button to subscribe. so that by 
+clicking on subscribe button it has to redirect to home page for now. I have a form validation done with the javascript.
+
+For upcoming part I am planning to create a login part in Home page and create a cart option in the product page so, that by clicking on product it should 
+save to cart. For the about page there will be a Let's Talk button and by clicking on that the chat window will be open. Coming to the contact page i have 
+ideas of keeping the maps location down the contact page and also facebook, instagram, twitter icons to see my comapany's social media platforms.

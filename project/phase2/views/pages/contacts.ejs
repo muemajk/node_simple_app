@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <link rel="stylesheet" href="public/css/stylecontact.css">
+</head>
+<body>
+    <header>
+        <%- include('../partials/header'); %>
+        <div>
+            <p><strong>Welcome,</strong><%= session.user %></p>
+            <a href="/logout">Logout</a>
+        </div>
+    </header>
+    <section class = "contact-section">
+        <div class ="contact-bg">
+            <h2>contact us</h2>
+            <div class='line'>
+                 <div></div>
+            </div>
+            <p class = "text">You have a couple of options on how to place the order E-mail/call to "Contact us" 
+                and also click the subscribe option below for the company's promotions mailing list.
+                 We'd love to hear from you!.</p>
+        </div>
+            
+        <div class = "contact-body">
+            <div class = "contact-info">
+                <div>
+                    <span><i class = "fas fa-phone"></i></span>
+                    <span>phone Number</span>
+                    <span class = "text">1-2392-23928-2</span>
+                </div>
+                <div>
+                    <span><i class="fas fa-envelope"></i></span>
+                    <span>E-mail</span>
+                    <span class = "text">mail@balloonatic.com</span>
+                </div>
+                <div>
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <span>Address</span>
+                    <span class="text">300 Boston post Rd, West Haven, CT 06516, United States</span>
+                </div>
+                <div>
+                    <span><i class="fas fa-clock"></i></span>
+                    <span>Opening Hours</span>
+                    <span class="text">Monday-Friday(9:00 AM to 5:00 PM)</span>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form action="homepage.html" method="post" onsubmit="return validation();">
+                    <div>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+
+                        <input type = "Submit" class="send-btn" name="submit" value =
+                            "Subscribe" required>
+                    </div>    
+                </form> 
+                
+                
+                <div id = "eresult" style = "color:red;"></div>
+                <script type="text/javascript">
+                function validation(){
+                var email= document.getElementById('email').value;
+                if(email == '')
+                {
+                    document.getElementById("eresult").innerHTML = "Email is Required";
+                    return false;
+                }
+                
+                else {
+                    return true;
+                }
+
+                }                        
+                
+                
+                </script>           
+                                  
+                
+            </div>
+
+        </div> 
+        
+    </section>
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>

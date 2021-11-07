@@ -1,0 +1,58 @@
+{
+    "products": [     
+    {
+        "productName":"Birthday Boy",
+        "productID": "aud123",
+        "category":"Standard",
+        "imageURL": "public/images/productimage1.PNG",
+        "unitPrice": "$30.00",
+        "color": "Red"
+
+    },
+    {
+        "productName":"Eid Arrangement",
+        "productID": "aud120",
+        "category":"Economy",
+        "imageURL": "public/images/productimage2.png",
+        "unitPrice": "$30.00",
+        "color": "Gold"
+
+    },
+    {
+        "productName":"Birthday Girl",
+        "productID": "aud121",
+        "category":"Deluxe",
+        "imageURL": "public/images/productimage3.png",
+        "unitPrice": "$30.00",
+        "color": "Yellow"
+
+    },
+    {
+        "productName":"Balloon Umbrella",
+        "productID": "aud122",
+        "category":"Industrial",
+        "imageURL": "public/images/productimage4.PNG",
+        "unitPrice": "$30.00",
+        "color": "Red"
+
+    },
+    {
+        "productName":"Ballon Kite",
+        "category":"Economy",
+        "productID": "aud125",
+        "imageURL": "public/images/productimage5.PNG",
+        "unitPrice": "$30.00",
+        "color": "Blue"
+
+    },
+    {
+        "productName":"Balloon Column",
+        "productID": "aud124",
+        "category":"Standard",
+        "imageURL": "public/images/productimage6.Png",
+        "unitPrice": "$30.00",
+        "color": "Green"
+
+    }
+    ]
+}
