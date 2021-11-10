@@ -1,0 +1,19 @@
+
+footer {
+    display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     height: 15vh;
+     width: 100%;
+     background: #001f3f;
+     color: #fff;
+     margin-top: 1rem;
+}
+
+footer img {
+  width: 50px;
+  border-radius: 3px;
+  margin-right: 8px;
+  margin-top: 15px;
+  vertical-align: middle;
+}

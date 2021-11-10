@@ -1,6 +1,6 @@
 const express = require('express');
 const cookieParser = require("cookie-parser");
-const sessions = require('express-session');
+const session = require('express-session');
 
 const USER_ARRAY = require('./mock-db/users.json');
 const PRODUCT_ARRAY = require('./mock-db/balloonatic-products.json');
@@ -25,7 +25,7 @@ const Users = USER_ARRAY.users
 
 const oneDay = 1000 * 60 * 60 * 24;
 
-app.use(sessions({
+app.use(session({
     secret: "thisismysecretkeydklgjasdflgfgikflfhdisghisdfsghldf",
     saveUninitialized: true,
     cookie: {maxAge: oneDay},
@@ -42,8 +42,6 @@ app.use(express.static(__dirname));
 app.set('view engine', 'ejs');
 app.use('/public', express.static('public'));
 var productlist = PRODUCT_ARRAY.products;
-
-var session;
 
 
 function AddNewUser(addtodb, fileName){
@@ -218,12 +216,16 @@ app.get('/getquotes', requireLogin, (req, res) => {
 
 app.get('/logout', requireLogin, (req, res) => {
     req.session = null;
-    res.render('pages/logout');
+    res.render('pages/logout', {
+        session: req.session,
+    });
 })
 
 //The 404 Route (ALWAYS Keep this as the last route)
 app.get('*', function(req, res){
-    res.render('pages/page_not_found');
+    res.render('pages/page_not_found',{
+        session: req.session,
+    });
   });
 
 app.listen(port, () => {

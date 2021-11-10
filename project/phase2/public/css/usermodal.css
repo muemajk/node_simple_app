@@ -1,6 +1,9 @@
 
 /* BASIC */
 
+
+
+
 html {
     background-color: #56baed;
   }
@@ -8,8 +11,17 @@ html {
   body {
     font-family: "Poppins", sans-serif;
     height: 100vh;
+    background: #EBE6A2;
   }
   
+.imglink {
+    position: absolute;
+    width: 201px;
+    height: 305px;
+    left: 309px;
+    top: 25px;
+}
+
   a {
     color: #92badd;
     display:inline-block;
@@ -36,7 +48,7 @@ html {
     align-items: center;
     flex-direction: column; 
     justify-content: center;
-    width: 100%;
+    width: auto;
     min-height: 100%;
     padding: 20px;
   }
@@ -56,10 +68,10 @@ html {
   }
   
   #formFooter {
-    background-color: #f6f6f6;
-    border-top: 1px solid #dce8f1;
     padding: 25px;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
     -webkit-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
   }

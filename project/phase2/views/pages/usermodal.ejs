@@ -5,24 +5,13 @@
     <link rel="stylesheet" href="public/css/usermodal.css">
 </head>
 <body>
-    
-    <header>
-        <%- include('../partials/header'); %>
-        <div>
-            <p><strong>Welcome,</strong><%= session.user %></p>
-            <a href="/logout">Logout</a>
-        </div>
-    </header>
     <main>
+      <a href="/"><img class="homelink" src="/public/images/ballonlogo.png"></a>
+      <img class="imglink" src="/public/images/h.png">
         <% if(action == 'login') { %>
             <div class="wrapper fadeInDown">
-                <div id="formContent">
+                <div id="loginformContent">
                   <!-- Tabs Titles -->
-              
-                  <!-- Icon -->
-                  <div class="fadeIn first" >
-                    <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
-                  </div>
               
                   <!-- Login Form -->
                   <form action="/loginfunction" method="POST">
@@ -34,6 +23,7 @@
                   <!-- Remind Passowrd -->
                   <div id="formFooter">
                     <a class="underlineHover" href="#">Forgot Password?</a>
+                    <a href="/register">Dont have an account?</a>
                   </div>
               
                 </div>
@@ -52,7 +42,7 @@
                 <input type="text" id="city" class="fadeIn first" name="city" placeholder="City" maxlength="25">
                 <input type="text" id="state" class="fadeIn first" name="state" placeholder="State" maxlength="2">
                 <input type="text" id="postal" class="fadeIn first" name="postal" placeholder="postal code" maxlength="5">
-                <input type="text" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="phone">
+                <input type="text" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="phone" title="Here is an example phone number: (555) 555-1234;">
                 <input type="text" id="username" class="fadeIn first" name="username" placeholder="user name">
                 <input type="email" id="email" class="fadeIn second" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address"
                 placeholder="email">
@@ -65,7 +55,7 @@
           
               <!-- Remind Passowrd -->
               <div id="formFooter">
-                <a class="underlineHover" href="#">Forgot Password?</a>
+                <a href="/login">Already have an account?</a>
               </div>
           
             </div>

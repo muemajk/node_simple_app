@@ -1,24 +1,43 @@
 <head>
-  <link rel="stylesheet" href="public/css/stylehome.css">
+  <link rel="stylesheet" href="public/css/styleheader.css">
 </head>
 <div>
-<nav class="navbar navbar-expand-lg logos">
+<div class="container">
+  <nav class="navbar navbar-expand-lg logos">
+    <div class="nav-account">
+    <% if(session) { %>
+      <div class="accntdet">
+        <p>Welcome <%= session.user %></p>
+        <a href="/logout">Logout</a>
+      </div>
+      <% } else { %>
+      <div class="accntdet">
+        <a href="/login">Login</a>
+        <a href="/register">Sign up</a>
+      </div>
+      <% } %>
     <a class="navbar-brand" href="/">
-        <img src="public/images/ballonlogo.png" alt="Logo">
-        <title>The Balloonatic Asylum</title>
-    </a>
-    <ul class="navbar-nav mr-auto">
-      
-      <li class="nav-item">
-        <a class="nav-link" href="/products">Products</a>
-      </li>      
-      <li class="nav-item">
-        <a class="nav-link" href="/about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/contacts">Contacts</a>
-      </li>
-    </ul>
+          <img src="public/images/ballonlogo.png" alt="Logo" width="100px" height='100px'>
+        </a>
+        <h4>The Balloonatic Asylum</h4>
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/products">Products</a>
+        </li>      
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contacts">Contacts</a>
+        </li>
+      </ul>
+      <form>
+        <input class="search" type="text" placeholder="Search..."/>
+        <input class="searchbtn"  type="submit"/>
+      </form>
+    </div>
+    </div>
   </nav>
   <nav class="main-nav-bar">
     <ul>

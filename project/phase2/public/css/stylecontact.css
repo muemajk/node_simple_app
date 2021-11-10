@@ -20,7 +20,7 @@ header   {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background: #001f3f;
+  background: #EBE6A2;
   color: #FFF;
   padding: 20px 30px;
 }
@@ -126,7 +126,7 @@ header   {
 
 .contact-bg{
       min-height:60vh;
-      background:  url(public/images/contact-bg.jpg) no-repeat;
+      background:  url(/public/images/contact-bg.jpg) no-repeat;
       background-position: 100% 100%;
       background-attachment: local;
       text-align: center;
@@ -135,6 +135,7 @@ header   {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-shadow: #444;
 }
 
 

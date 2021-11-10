@@ -14,15 +14,7 @@ body     {
 
 }
 
-/* styling our header */
-header   {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background: #001f3f;
-  color: #FFF;
-  padding: 20px 30px;
-}
+
 
 /* logo */
 #logo         {
@@ -46,24 +38,39 @@ header   {
 .contain {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .product-content {
   background-color: rgb(138, 138, 138);
+  width: 286px;
+  background-color: transparent;
 }
 .container-left-panel {
-  width: 100%;
+  width: 286px;
+  background-color: transparent;
 }
 .container-left-panel li {
-  color: white;
   padding: 1em;
   list-style: none;
-  width:100%;
+  width: 286px;
+  height: 72px;
+
+  background: #ECEAEA;
+  border-bottom: 1px solid #b9b9b9;
+  box-sizing: border-box;
 }
 
 .container-left-panel li:hover {
+  color: white;
   background-color: rgb(70, 70, 70);
 }
 
+
+.container header {
+  width: 100%;
+  background: #EBE6A2;
+  padding: 0;
+}
 .searchbar input[type=text] {
   display: inline-block;
   padding: 10px;
@@ -171,7 +178,6 @@ header   {
 
 .item2 h4 {
    display:block;
-   box-shadow: 3px 3px 8px #000000;
    padding: 10px;
    margin: 10px;
    text-align: center;
@@ -186,7 +192,6 @@ header   {
      padding: 10px;
      margin-bottom: 1rem;
      margin-top: 2rem;
-     box-shadow: 3px 3px 8px #000000;
 }
     
 

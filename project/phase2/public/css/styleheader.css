@@ -1,0 +1,104 @@
+
+
+h4 {
+    color: white;
+}
+.navbar-brand img {
+    margin: 5px;
+}
+
+.navbar {
+    background-color: transparent;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    margin: 0;
+}
+.accntdet {
+    position: absolute;
+    width: 168px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 53px;
+    display: flex;
+    flex-direction:row;
+    left: 121px;
+    color: white;
+    top: 50px;
+}
+
+.navbar-account  h4{
+    position: absolute;
+    width: 323px;
+    height: 28px;
+    left: 66px;
+    top: 65px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: white;
+}
+.nav-account {
+    
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    background:#001f3f;
+    align-items: bottom;
+    position: relative;
+}
+.main-nav-bar {
+    padding: 20px;
+}
+
+.navbar-nav a {
+    color: black;
+}
+
+
+.navbar-nav a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-nav form {
+    color: white;
+}
+
+.logo {
+    width: 100%;
+}
+.searchbtn {    
+    position: absolute;
+    width: 83px;
+    height: 28px;
+    right: 5;
+    top: 50px;
+}
+
+.search {
+    border: 1px solid rgb(143, 143, 143);
+    position: absolute;
+    width: 334px;
+    height: 28px;
+    right: 55px;
+    border-radius: 10px;
+    top: 50px;
+}
+
+.navbar-nav {
+    color: black;
+    position: absolute;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 29px;
+    left: 303px;
+    top: 80px;
+}
